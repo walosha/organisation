@@ -9,6 +9,7 @@ const withVideos = require("next-videos");
 const withImages = require("next-images");
 
 module.exports = withPlugins([[withVideos], [withFonts], [withImages]], {
+  target: "serverless",
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
     config.resolve.modules.push(path.resolve("./"));
@@ -21,8 +22,3 @@ module.exports = withPlugins([[withVideos], [withFonts], [withImages]], {
     return config;
   },
 });
-
-module.exports = {
-  // Target must be serverless
-  target: "serverless",
-};
