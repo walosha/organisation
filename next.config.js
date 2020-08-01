@@ -21,3 +21,8 @@ module.exports = withPlugins([[withVideos], [withFonts], [withImages]], {
     return config;
   },
 });
+
+module.exports = {
+  // Target must be serverless
+  target: "serverless",
+};
