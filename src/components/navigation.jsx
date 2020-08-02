@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../assests/image/logo";
+import Logo from "../components/logo";
 
 export class Navigation extends Component {
   render() {

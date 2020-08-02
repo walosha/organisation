@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Create your Softwares with Professional and Creative App Developers",
-    "paragraph": "Here at Pacific Professional we design and develop digital products including mobile apps, websites and web applications. The two cornerstones upon which we build successful software are user-centered interaction design and scalable software architecture."
+    "paragraph": "We design and develop digital products including mobile apps, desktop and web applications. The two cornerstones upon which we build successful software are user-centered interaction design and scalable software architecture."
   },
   "About": {
     "paragraph": "Pacific Professional Service is a Foremost Tech firm that takes pride in building consumer-friendly applications that solves problems that effectively brings desired returns",
@@ -88,11 +88,7 @@
       "name": "Olawale Afuye",
       "job": "Senior Software Enginer"
     },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Ojoawo Segun",
-      "job": "Designer"
-    },
+
     {
       "img": "img/team/03.jpg",
       "name": "Toyin Agbowuro",
@@ -101,6 +97,11 @@
     {
       "img": "img/team/gabriel.jpg",
       "name": "Gabriel Emmanuel",
+      "job": "Designer"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Ojoawo Segun",
       "job": "Designer"
     }
   ],

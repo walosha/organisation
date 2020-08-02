@@ -467,7 +467,7 @@ header .intro-text {
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #666;
+  color: #6470fb;
 }
 /* Team Section */
 #team {
@@ -486,6 +486,7 @@ header .intro-text {
 #team .thumbnail .caption {
   padding: 10px 0 0 0;
   color: #888;
+  color: #6470fb;
 }
 /* Contact Section */
 #contact {
