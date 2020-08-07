@@ -128,7 +128,7 @@ export class Contact extends Component {
         <div id="footer">
           <div className="container text-center">
             <p>
-              &copy; {new Date().getFullYear()} Pacific Professional
+              &copy; 2018 - {new Date().getFullYear()} Pacific Professional
               Technologies
             </p>
           </div>
