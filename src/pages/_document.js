@@ -37,6 +37,7 @@ class MyDocument extends Document {
             name="keywords"
             content="software company, corporate software,web application, mobile applications,desktop application cloud application,software maintenance"
           />
+          <meta name="yandex-verification" content="edc1b7461e44eeb5" />
           <meta name="robots" content="index, follow" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />
