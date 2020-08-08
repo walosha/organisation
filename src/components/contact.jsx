@@ -1,7 +1,36 @@
 import React, { Component } from "react";
 
 export class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+
   render() {
+    const { status } = this.state;
+
     return (
       <div>
         <div id="contact">
@@ -15,7 +44,14 @@ export class Contact extends Component {
                     will get back to you as soon as possible.
                   </p>
                 </div>
-                <form name="sentMessage" id="contactForm" noValidate>
+                <form
+                  name="sentMessage"
+                  id="contactForm"
+                  noValidate
+                  onSubmit={this.submitForm}
+                  action="https://formspree.io/mrgydgyd"
+                  method="POST"
+                >
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
@@ -25,6 +61,7 @@ export class Contact extends Component {
                           className="form-control"
                           placeholder="Name"
                           required="required"
+                          name="name"
                         />
                         <p className="help-block text-danger"></p>
                       </div>
@@ -34,6 +71,7 @@ export class Contact extends Component {
                         <input
                           type="email"
                           id="email"
+                          name="email"
                           className="form-control"
                           placeholder="Email"
                           required="required"
@@ -54,13 +92,16 @@ export class Contact extends Component {
                     <p className="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
-                  <button
-                    disabled
-                    type="submit"
-                    className="btn btn-custom btn-lg"
-                  >
-                    Send Message
-                  </button>
+                  {status === "SUCCESS" ? (
+                    <p className="header-text">
+                      Thank you. We will respond shortly!
+                    </p>
+                  ) : (
+                    <button type="submit" className="btn btn-custom btn-lg">
+                      Send Message
+                    </button>
+                  )}
+                  {status === "ERROR" && <p>Ooops! There was an error.</p>}
                 </form>
               </div>
             </div>
