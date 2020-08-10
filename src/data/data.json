@@ -134,5 +134,52 @@
       "title": "CUSTOM SOLUTIONS",
       "text": "Our expertise in e-commerce, adtech/martech, and people-to-people fields as well as other business areas helps us develop web and mobile solutions tailored care. "
     }
+  ],
+  "gallery": [
+    {
+      "image": "img/portfolio/01-small.jpg",
+      "name": "project 1",
+      "slug": "project1"
+    },
+    {
+      "image": "img/portfolio/02-small.jpg",
+      "name": "project 2",
+      "slug": "project2"
+    },
+    {
+      "image": "img/portfolio/03-small.jpg",
+      "name": "project 3",
+      "slug": "project3"
+    },
+    {
+      "image": "img/portfolio/04-small.jpg",
+      "name": "project 4",
+      "slug": "project4"
+    },
+    {
+      "image": "img/portfolio/05-small.jpg",
+      "name": "project 5",
+      "slug": "project5"
+    },
+    {
+      "image": "img/portfolio/06-small.jpg",
+      "name": "project 6",
+      "slug": "project6"
+    },
+    {
+      "image": "img/portfolio/07-small.jpg",
+      "name": "project 7",
+      "slug": "project7"
+    },
+    {
+      "image": "img/portfolio/08-small.jpg",
+      "name": "project 8",
+      "slug": "project8"
+    },
+    {
+      "image": "img/portfolio/09-small.jpg",
+      "name": "project 9",
+      "slug": "project9"
+    }
   ]
 }

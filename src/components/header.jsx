@@ -19,7 +19,7 @@ export class Header extends Component {
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h1 className="header-text">
-                  {this.props.data ? this.props.data.title : "Loading"}
+                  {this.props.data.title}
                   <span></span>
                 </h1>
                 <p className="sub-text">
