@@ -13,7 +13,7 @@ export default function gallery({ data }) {
           <div className="portfolio-items">
             {data.map(({ image, name, slug }, key) => (
               <div key={key} className="col-sm-6 col-md-4 col-lg-4">
-                <div className="portfolio-item">
+                <figure className="portfolio-item">
                   <Link href={`/${slug}`}>
                     <div className="hover-bg">
                       <div className="hover-text">
@@ -22,7 +22,7 @@ export default function gallery({ data }) {
                       <img src={image} className="img-responsive" alt={name} />
                     </div>
                   </Link>
-                </div>
+                </figure>
               </div>
             ))}
           </div>

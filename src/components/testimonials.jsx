@@ -12,16 +12,15 @@ export class testimonials extends Component {
             {this.props.data
               ? this.props.data.map((d, i) => (
                   <div key={`${d.name}-${i}`} className="col-md-4">
-                    <div className="testimonial">
-                      <div className="testimonial-image">
-                        {" "}
+                    <figure className="testimonial">
+                      <figcaption className="testimonial-image">
                         <img src={d.img} alt="" />{" "}
-                      </div>
+                      </figcaption>
                       <div className="testimonial-content">
-                        <p>"{d.text}"</p>
-                        <div className="testimonial-meta"> - {d.name} </div>
+                        <blockquote>"{d.text}"</blockquote>
+                        <p className="testimonial-meta"> - {d.name} </p>
                       </div>
-                    </div>
+                    </figure>
                   </div>
                 ))
               : "loading"}

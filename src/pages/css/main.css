@@ -697,3 +697,7 @@ svg:not(:root) {
   object-fit: cover;
   height: 100%;
 }
+
+blockquote {
+  font-size: 1.4rem;
+}
