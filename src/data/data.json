@@ -137,49 +137,34 @@
   ],
   "gallery": [
     {
-      "image": "img/portfolio/01-small.jpg",
-      "name": "project 1",
+      "image": "img/portfolio/01-small.png",
+      "name": "Caterpilla Procurement and Logistics site",
       "slug": "project1"
     },
     {
-      "image": "img/portfolio/02-small.jpg",
-      "name": "project 2",
+      "image": "img/portfolio/02-small.png",
+      "name": "Flames of Fire Ministry",
       "slug": "project2"
     },
     {
-      "image": "img/portfolio/03-small.jpg",
-      "name": "project 3",
+      "image": "img/portfolio/03-small.png",
+      "name": "CadacStores - ecommerce android and iOS App",
       "slug": "project3"
     },
     {
-      "image": "img/portfolio/04-small.jpg",
-      "name": "project 4",
+      "image": "img/portfolio/04-small.png",
+      "name": "Pacific Professional Service",
       "slug": "project4"
     },
     {
-      "image": "img/portfolio/05-small.jpg",
-      "name": "project 5",
+      "image": "img/portfolio/05-small.png",
+      "name": "KSM Basket - ecommerce android app",
       "slug": "project5"
     },
     {
-      "image": "img/portfolio/06-small.jpg",
-      "name": "project 6",
+      "image": "img/portfolio/06-small.png",
+      "name": "Olango Video and Audio Call Application",
       "slug": "project6"
-    },
-    {
-      "image": "img/portfolio/07-small.jpg",
-      "name": "project 7",
-      "slug": "project7"
-    },
-    {
-      "image": "img/portfolio/08-small.jpg",
-      "name": "project 8",
-      "slug": "project8"
-    },
-    {
-      "image": "img/portfolio/09-small.jpg",
-      "name": "project 9",
-      "slug": "project9"
     }
   ]
 }

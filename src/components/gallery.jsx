@@ -17,7 +17,7 @@ export default function gallery({ data }) {
                   <Link href={`/${slug}`}>
                     <div className="hover-bg">
                       <div className="hover-text">
-                        <h4>{name}</h4>
+                        <h4 style={{ fontWeight: "bolder" }}>{name}</h4>
                       </div>
                       <img src={image} className="img-responsive" alt={name} />
                     </div>
