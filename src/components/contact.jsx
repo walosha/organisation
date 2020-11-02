@@ -94,7 +94,8 @@ export class Contact extends Component {
                   <div id="success"></div>
                   {status === "SUCCESS" ? (
                     <p className="header-text">
-                      Thank you. We will respond shortly!
+                      Thank you! Your submission has been received!. We will
+                      respond swiftly!
                     </p>
                   ) : (
                     <button type="submit" className="btn btn-custom btn-lg">
