@@ -133,18 +133,17 @@ class MyDocument extends Document {
             content="Web design software company"
           />
           {/* Chat Bots for App */}
+
           <script
             async
             dangerouslySetInnerHTML={{
               __html: `
-                    (function (w, d) {
-                      w.CollectId = "5f026972c75904544dab3951";
-                      var h = d.head || d.getElementsByTagName("head")[0];
-                      var s = d.createElement("script");
-                      s.setAttribute("type", "text/javascript");
-                      s.setAttribute("src", "https://collectcdn.com/launcher.js");
-                      h.appendChild(s);
-                    })(window, document);
+                 (function collectId(w, d) { 
+                  w.CollectId = "6008d3eadd5fd55abf04ac52";
+                  var h = d.head || d.getElementsByTagName("head")[0]; 
+                  var s = d.createElement("script"); s.setAttribute("type", "text/javascript");
+                  s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js");
+                  h.appendChild(s); })(window, document)
             `,
             }}
           />
