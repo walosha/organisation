@@ -132,6 +132,24 @@ class MyDocument extends Document {
             name="Pacific Professional"
             content="Web design software company"
           />
+          {/* Custom Analytics  */}
+
+          <script
+            async
+            dangerouslySetInnerHTML={{
+              __html: `
+                  (function (w, d) {
+                    var h = d.head || d.getElementsByTagName("head")[0]; 
+                    t = d.createElement("script");
+                    t.async=true;
+                    t.setAttribute("src","https://analytics-server-v1.herokuapp.com/analytics-server.js");
+                    t.dataset.ackeeServer="https://analytics-server-v1.herokuapp.com";
+                    t.dataset.ackeeDomainId="c147ed04-a4fe-48dd-8f54-eea7f18774ad";
+                    h.appendChild(t);})(window, document);  
+            `,
+            }}
+          />
+
           {/* Chat Bots for App */}
 
           <script
