@@ -85,14 +85,13 @@
   "Team": [
     {
       "img": "img/team/wale.jpeg",
-      "name": "Olawale Afuye",
-      "job": "Senior Software Enginer"
+      "name": "Tope Afuye",
+      "job": "Lead Software Engineer"
     },
-
     {
       "img": "img/team/03.jpg",
       "name": "Toyin Agbowuro",
-      "job": "Software Developer"
+      "job": "Software Engineer"
     },
     {
       "img": "img/team/gabriel.jpg",
@@ -100,13 +99,18 @@
       "job": "Designer"
     },
     {
+      "img": "img/team/04.jpg",
+      "name": "Ademola Segun",
+      "job": "Software Engineer"
+    },
+    {
       "img": "img/team/02.jpg",
-      "name": "Ojoawo Segun",
-      "job": "Designer"
+      "name": "Segun Ojoawo",
+      "job": "Product Designer"
     }
   ],
   "Contact": {
-    "address": "42 Otunba Adeshilewa Street, Agric Ikorodu ",
+    "address": "1 Arc. Jide Ololade Ave, Ikorodu, Lagos",
     "phone": "+234-81854-31319",
     "email": "hello@pacific-professional.com.ng",
     "facebook": "https://web.facebook.com/ppslimited",

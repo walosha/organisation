@@ -478,6 +478,7 @@ header .intro-text {
 }
 #team .team-img {
   width: 24rem;
+  height: 24rem;
 }
 #team .thumbnail {
   background: transparent;
