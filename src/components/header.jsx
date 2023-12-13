@@ -17,8 +17,8 @@ export class Header extends Component {
             ></video>
             <div className="poster hidden"></div>
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1 className="header-text">
+              <div className="col-md-8 col-md-offset-2  intro-text">
+                <h1 style={{ background: "#000" }} className="header-text">
                   {this.props.data.title}
                   <span></span>
                 </h1>
