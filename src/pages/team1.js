@@ -276,7 +276,7 @@ function Team1() {
                 <div className="experts-img">
                   <img
                     className="img-fluid"
-                    src="assets/img/home-4/experts-07.png"
+                    src="assets/img/home-3/felix.jpg"
                     alt=""
                   />
                   <div className="expert-social">
