@@ -6,7 +6,7 @@ import Breadcrumb from "../components/common/Breadcrumb";
 import Home3Contact from "../components/contact/Home3Contact";
 import Feature4 from "../components/features/Feature4";
 import Layout from "../components/layout/Layout";
-import Partnar4 from "../components/partner/Partnar4";
+import Partnar4 from "../components/partner/Partner3";
 import Testimonial3 from "../components/testimonial/Testimonial3";
 
 function AboutPage() {
