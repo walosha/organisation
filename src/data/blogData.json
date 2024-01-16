@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "category": "Web development",
+        "img": "/assets/img/home-3/home3-blog-01.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Donec Finibus Laoreet Exte Eu Pellentesque."
+    },
+    {
+        "id": "2",
+        "category": "Cloud Solutions",
+        "img": "/assets/img/home-3/home3-blog-02.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Feugiat Varius Mattis Mass Enim Est Egestas."
+    },
+    {
+        "id": "3",
+        "category": "Web development",
+        "img": "/assets/img/home-3/home3-blog-03.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Navigating The Journey Off Cloud Solution."
+    },
+    {
+        "id": "4",
+        "category": "Web development",
+        "img": "/assets/img/home-3/home3-blog-04.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Donec Finibus Laoreet Exte Eu Pellentesque."
+    },
+    {
+        "id": "5",
+        "category": "Cloud Solutions",
+        "img": "/assets/img/home-3/home3-blog-05.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Feugiat Varius Mattis Mass Enim Est Egestas."
+    },
+    {
+        "id": "6",
+        "category": "Web development",
+        "img": "/assets/img/home-3/home3-blog-06.png",
+        "date": "May 20, 2023",
+        "count_comment": 5,
+        "title": "Navigating The Journey Off Cloud Solution."
+    }
+]

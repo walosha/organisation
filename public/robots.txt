@@ -1,3 +1,3 @@
-SiteMap: https://www.pacific-professional.ml/
+SiteMap: https://pacific-professional.com.ng/
 User-Agent: *
 Disallow:
