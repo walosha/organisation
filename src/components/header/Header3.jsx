@@ -106,10 +106,7 @@ function Header3() {
                   <i className="fas fa-map-marker-alt" />
                 </div>
                 <div className="info">
-                  <p>
-                    168/170, Avenue 01, Old York Drive Rich Mirpur DOHS,
-                    Bangladesh
-                  </p>
+                  <p></p>
                 </div>
               </div>
               <div className="single-info">
@@ -127,7 +124,10 @@ function Header3() {
                 </div>
                 <div className="info">
                   <a href="mailto: info@example.com">info@example.com</a>
-                  <a href="mailto: info@support.com">info@support.com</a>
+                  <a href="mailto:  info@pacific-professional.com.ng">
+                    {" "}
+                    info@pacific-professional.com.ng
+                  </a>
                 </div>
               </div>
             </div>
