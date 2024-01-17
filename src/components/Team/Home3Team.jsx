@@ -40,11 +40,6 @@ function Home3Team() {
                         <i className="bx bxl-facebook" />
                       </a>
                     </li>
-                    {/* <li>
-                <a href="https://www.twitter.com/">
-                  <i className="bx bxl-twitter" />
-                </a>
-              </li> */}
                     <li>
                       <a href="https://www.instagram.com/pacificprofessional">
                         <i className="bx bxl-instagram" />
@@ -74,22 +69,12 @@ function Home3Team() {
                 <div className="expert-social">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/">
+                      <a href="https://web.facebook.com/ppslimited">
                         <i className="bx bxl-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pinterest.com/">
+                      <a href="https://www.instagram.com/pacificprofessional">
                         <i className="bx bxl-instagram" />
                       </a>
                     </li>

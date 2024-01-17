@@ -27,7 +27,7 @@ function Faqpage() {
                       aria-controls="home"
                       aria-selected="true"
                     >
-                      Progress
+                      Application
                     </button>
                   </li>
                   <li className="nav-item" role="presentation">
@@ -122,7 +122,8 @@ function Faqpage() {
                           aria-expanded="true"
                           aria-controls="collapseOne"
                         >
-                          Aliquam ligula nunc, vehicula at est quis.
+                          Question: How long does it take to develop a custom
+                          software solution?{" "}
                         </button>
                       </h5>
                       <div
@@ -132,40 +133,16 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          The timeline for developing a custom software solution
+                          varies based on project complexity and requirements.
+                          Typically, it can range from a few weeks for small
+                          projects to several months for larger, more intricate
+                          applications. Our team works closely with clients to
+                          establish realistic timelines and milestones
                         </div>
                       </div>
                     </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          In hac habitasse platea dictumst Cras leo.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
+
                     <div className="accordion-item">
                       <h5 className="accordion-header" id="headingThree">
                         <button
@@ -176,7 +153,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseThree"
                         >
-                          ornare iaculis tellus. Phasellus venenatis.
+                          How do you ensure the security of our software and
+                          data?{" "}
                         </button>
                       </h5>
                       <div
@@ -186,10 +164,13 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          Security is a top priority for us. We employ industry
+                          best practices, conduct thorough testing, and
+                          implement encryption measures to safeguard your
+                          software and data. Our team follows secure coding
+                          standards, performs regular security audits, and stays
+                          informed about the latest security threats to provide
+                          a robust and secure solution.
                         </div>
                       </div>
                     </div>
@@ -203,7 +184,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseFour"
                         >
-                          Phasellus a placerat eros In hac habitasse.
+                          Can you integrate the new software with our existing
+                          systems?{" "}
                         </button>
                       </h5>
                       <div
@@ -213,10 +195,13 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          Yes, our team has extensive experience in system
+                          integration. We work to ensure seamless compatibility
+                          with your existing systems, whether they are
+                          databases, APIs, or third-party applications.
+                          Integration is a crucial aspect, and we prioritize
+                          interoperability to enhance the efficiency of your
+                          overall business processes.
                         </div>
                       </div>
                     </div>
@@ -230,7 +215,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseFive"
                         >
-                          Phasellus a placerat eros In hac habitasse.
+                          What level of involvement do we have during the
+                          development process?{" "}
                         </button>
                       </h5>
                       <div
@@ -240,37 +226,12 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingSix">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSix"
-                          aria-expanded="false"
-                          aria-controls="collapseSix"
-                        >
-                          Phasellus a placerat eros In hac habitasse.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseSix"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingSix"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          We encourage client involvement throughout the
+                          development process. Our approach is collaborative,
+                          and we provide regular updates, conduct feedback
+                          sessions, and involve you in key decision-making
+                          processes. This ensures that the final software aligns
+                          perfectly with your vision and requirements.
                         </div>
                       </div>
                     </div>
@@ -284,83 +245,32 @@ function Faqpage() {
                 >
                   <div className="accordion" id="accordionExample2">
                     <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingOne1">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne1"
-                          aria-expanded="true"
-                          aria-controls="collapseOne1"
-                        >
-                          Aliquam ligula nunc, vehicula at est quis.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseOne1"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="headingOne1"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingTwo1">
+                      <h5 className="accordion-header" id="headingTwo">
                         <button
                           className="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo1"
+                          data-bs-target="#collapseTwo"
                           aria-expanded="false"
-                          aria-controls="collapseTwo1"
+                          aria-controls="collapseTwo"
                         >
-                          In hac habitasse platea dictumst Cras leo.
+                          What is the cost of developing custom software?{" "}
                         </button>
                       </h5>
                       <div
-                        id="collapseTwo1"
+                        id="collapseTwo"
                         className="accordion-collapse collapse"
-                        aria-labelledby="headingTwo1"
+                        aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingThree1">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree1"
-                          aria-expanded="false"
-                          aria-controls="collapseThree1"
-                        >
-                          ornare iaculis tellus. Phasellus venenatis.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseThree1"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingThree1"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          The cost of custom software development depends on
+                          factors like project scope, features, and complexity.
+                          We provide detailed project estimates after
+                          understanding your requirements during the initial
+                          consultation. Our goal is to offer transparent pricing
+                          and ensure that the solution aligns with your budget
+                          and goals.
                         </div>
                       </div>
                     </div>
@@ -374,7 +284,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseFour1"
                         >
-                          Phasellus a placerat eros In hac habitasse.
+                          What payment methods do you accept for software
+                          development services?{" "}
                         </button>
                       </h5>
                       <div
@@ -384,10 +295,11 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          We accept various payment methods, including bank
+                          transfers, credit cards, and other secure online
+                          payment options. Our goal is to provide flexibility to
+                          clients, and we can discuss and tailor payment
+                          arrangements to accommodate your preferences.{" "}
                         </div>
                       </div>
                     </div>
@@ -401,7 +313,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseFive1"
                         >
-                          Phasellus a placerat eros In hac habitasse.
+                          How is the payment structure organized throughout the
+                          software development process?{" "}
                         </button>
                       </h5>
                       <div
@@ -411,37 +324,13 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingSix1">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSix1"
-                          aria-expanded="false"
-                          aria-controls="collapseSix1"
-                        >
-                          Phasellus a placerat eros In hac habitasse.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseSix1"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingSix1"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          The payment structure is typically organized into
+                          milestones or phases. We often request an initial
+                          deposit to commence the project, followed by payments
+                          linked to key project milestones. The specifics depend
+                          on the project scope and duration. We aim to create a
+                          transparent payment plan, ensuring that payments align
+                          with project progress and deliverables.
                         </div>
                       </div>
                     </div>
@@ -464,7 +353,8 @@ function Faqpage() {
                           aria-expanded="true"
                           aria-controls="collapseOne2"
                         >
-                          Aliquam ligula nunc, vehicula at est quis.
+                          What kind of support services do you offer after the
+                          software is deployed?{" "}
                         </button>
                       </h5>
                       <div
@@ -474,10 +364,13 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          We provide comprehensive post-deployment support
+                          services, including bug fixes, software updates, and
+                          addressing any issues that may arise. Our support team
+                          is accessible via various channels, ensuring a prompt
+                          response to your queries. We offer different support
+                          plans tailored to your needs, ensuring the continued
+                          success and reliability of your software.
                         </div>
                       </div>
                     </div>
@@ -491,7 +384,8 @@ function Faqpage() {
                           aria-expanded="false"
                           aria-controls="collapseTwo2"
                         >
-                          In hac habitasse platea dictumst Cras leo.
+                          How do you handle emergency support and critical
+                          issues outside regular business hours?{" "}
                         </button>
                       </h5>
                       <div
@@ -501,118 +395,45 @@ function Faqpage() {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          We understand that issues may arise outside regular
+                          business hours. Our support services include
+                          provisions for emergency support during such times. We
+                          have a dedicated on-call team available 24/7 to
+                          address critical issues promptly. Our goal is to
+                          minimize downtime and ensure the continuous operation
+                          of your software, even during unforeseen
+                          circumstances.
                         </div>
                       </div>
                     </div>
+
                     <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingThree2">
+                      <h5 className="accordion-header" id="headingSix">
                         <button
                           className="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree2"
+                          data-bs-target="#collapseSix"
                           aria-expanded="false"
-                          aria-controls="collapseThree2"
+                          aria-controls="collapseSix"
                         >
-                          ornare iaculis tellus. Phasellus venenatis.
+                          What support and maintenance services do you offer
+                          post-launch?{" "}
                         </button>
                       </h5>
                       <div
-                        id="collapseThree2"
+                        id="collapseSix"
                         className="accordion-collapse collapse"
-                        aria-labelledby="headingThree2"
+                        aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingFour2">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFour2"
-                          aria-expanded="false"
-                          aria-controls="collapseFour2"
-                        >
-                          Phasellus a placerat eros In hac habitasse.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseFour2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingFour2"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingFive2">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFive2"
-                          aria-expanded="false"
-                          aria-controls="collapseFive2"
-                        >
-                          Phasellus a placerat eros In hac habitasse.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseFive2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingFive2"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h5 className="accordion-header" id="headingSix2">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSix2"
-                          aria-expanded="false"
-                          aria-controls="collapseSix2"
-                        >
-                          Phasellus a placerat eros In hac habitasse.
-                        </button>
-                      </h5>
-                      <div
-                        id="collapseSix2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingSix2"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos himenaeos. Praesent nec neque at
-                          dolor venenatis consectetur eu quis ex. placerat felis
-                          non aliquam.
+                          Post-launch, we offer comprehensive support and
+                          maintenance services to address any issues, implement
+                          updates, and ensure the continued smooth operation of
+                          your software. Our team is responsive and proactive,
+                          providing ongoing assistance to keep your software
+                          optimized and up-to-date with evolving technologies.
                         </div>
                       </div>
                     </div>

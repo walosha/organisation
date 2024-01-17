@@ -50,12 +50,12 @@ function Choose6() {
                   </div>
                   <h4>
                     Best Creative IT Agency And Solutions <br />
-                    <span>Since 2005.</span>
+                    <span>Since 2019.</span>
                   </h4>
                   <p>
-                    Morbi interdum pellentesque nunc, luctus pretium nullagoneq
-                    luctus at. Aliquam cursus nunc arcu, condimentum
-                    efficiturunt tellus iaculis faucibus Quisque gravida.
+                    Transforming visions into interactive realities, our
+                    Creative IT Agency has been at the forefront of innovation,
+                    providing cutting-edge solutions since 2019.
                   </p>
                   <div className="sl">
                     <h2>#1</h2>
@@ -91,8 +91,9 @@ function Choose6() {
                         <div className="content">
                           <h4>Strategy</h4>
                           <p>
-                            Morbi interdum pellentesque nunc, luctuso pretium
-                            nullagoneq luctus at. Aliquam one cursus nunc arcu
+                            Crafting success through strategic excellence –
+                            where every move is a calculated step toward
+                            achieving your goals.{" "}
                           </p>
                         </div>
                       </div>
@@ -107,8 +108,10 @@ function Choose6() {
                         <div className="content">
                           <h4>Audience</h4>
                           <p>
-                            Morbi interdum pellentesque nunc, luctuso pretium
-                            nullagoneq luctus at. Aliquam one cursus nunc arcu
+                            Connecting brands with hearts and minds – our focus
+                            on understanding, engaging, and resonating with your
+                            audience creates meaningful connections that stand
+                            the test of time.{" "}
                           </p>
                         </div>
                       </div>
@@ -123,8 +126,10 @@ function Choose6() {
                         <div className="content">
                           <h4>Keyword</h4>
                           <p>
-                            Morbi interdum pellentesque nunc, luctuso pretium
-                            nullagoneq luctus at. Aliquam one cursus nunc arcu
+                            Unlocking the power of words – our expertise in
+                            strategically chosen keywords amplifies your online
+                            presence, ensuring your message resonates and
+                            reaches the right audience effectively{" "}
                           </p>
                         </div>
                       </div>

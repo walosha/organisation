@@ -158,11 +158,11 @@ function Footer3() {
                       <a>About Us</a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link legacyBehavior href="/case-study">
                       <a>Case Study</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link legacyBehavior href="/blog">
                       <a>News &amp Article;</a>
@@ -176,11 +176,6 @@ function Footer3() {
                   <li>
                     <Link legacyBehavior href="/project">
                       <a>All Portfolio</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/pricing">
-                      <a>Pricing Plan</a>
                     </Link>
                   </li>
                 </ul>
@@ -208,11 +203,6 @@ function Footer3() {
                   </li>
                   <li>
                     <a href="#">Career</a>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/pricing">
-                      <a>Pricing Plan</a>
-                    </Link>
                   </li>
                 </ul>
               </div>
