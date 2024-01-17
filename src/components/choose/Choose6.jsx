@@ -46,7 +46,7 @@ function Choose6() {
                     />
                   </div>
                   <div className="icon">
-                    <img src="assets/img/logo.svg" alt="" />
+                    <img src="assets/img/logo_big.png" alt="" />
                   </div>
                   <h4>
                     Best Creative IT Agency And Solutions <br />

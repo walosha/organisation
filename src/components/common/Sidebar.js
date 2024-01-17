@@ -57,7 +57,7 @@ function Sidebar({ isMenuOpen, toggleMenu }) {
                 <img
                   alt="image"
                   className="img-fluid"
-                  src="assets/img/logo.svg"
+                  src="assets/img/logo_big.png"
                 />
               </a>
             </Link>

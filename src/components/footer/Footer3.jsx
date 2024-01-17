@@ -14,7 +14,7 @@ function Footer3() {
                     <a>
                       <img
                         className="img-fluid"
-                        src="assets/img/logo.svg"
+                        src="assets/img/logo_big.png"
                         alt=""
                       />
                     </a>
