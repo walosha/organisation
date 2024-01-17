@@ -8,7 +8,7 @@
   --black-color2: #1d1d1d;
   --gray-color: #f7f7fd;
   --paragraph-color: #272727;
-  --theme-color: #06d889;
+  --theme-color: #03a9f4;
   --body-color: #eaf1f5;
   --border-color: #232323;
   --black-soft-color: #7e7e7e;
@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--theme-color);
+  background-color: #03a9f4;
   font-size: 20px;
   color: var(--white-color);
 }
@@ -840,7 +840,7 @@ video {
   position: absolute;
   bottom: -1px;
   left: 0;
-  background: linear-gradient(90deg, #fff, #06d889, #fff);
+  background: linear-gradient(90deg, #fff, #9cc4b5, #fff);
   width: 100%;
   height: 1px;
   transform: scaleX(0);
