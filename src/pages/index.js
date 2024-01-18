@@ -20,43 +20,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta
-          property="og:title"
-          content="Mobile,desktop,web applications company"
-        />
-        <meta property="og:site_name" content="Pacific Professional Service" />
-        <meta
-          property="og:url"
-          content="https://www.pacific-professional.com.ng/"
-        />
-        <meta
-          property="og:description"
-          content="We are a web & app development company that turns your ideas into a new driving force of your business. We hire brilliant web and mobile app developers to deliver projects on time and maintain the top"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/53145584_360454158131288_837945284771184640_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_eui2=AeELoLiw4fhKbzfPW4c-aKxDH1G1-mUXfYofUbX6ZRd9igzbSs_C3rVYO2DLhxRpxcE&_nc_ohc=A9jj751ZC9YAX8MtWuD&_nc_ht=scontent.flos2-1.fna&oh=6e319f0e5e27517ab8d7b27b032cbb77&oe=5F464541"
-        />
-        <meta charSet="utf-8" />
-        <meta name="title" content="Pacific Technology Service" />
-        <meta
-          name="description"
-          content="We are a web & app development company that turns your ideas into a new driving force of your business. We hire brilliant web and mobile app developer"
-        />
-        <meta
-          name="keywords"
-          content="software company, corporate software,web application, mobile applications,desktop application cloud application,software maintenance"
-        />
-        <meta name="yandex-verification" content="edc1b7461e44eeb5" />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="English" />
-        <meta
-          name="author"
-          content="Olawale afuye Pacific Technology Service"
-        />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"

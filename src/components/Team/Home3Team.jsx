@@ -107,7 +107,7 @@ function Home3Team() {
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/">
+                      <a href="https://twitter.com/pacific_nig">
                         <i className="bx bxl-twitter" />
                       </a>
                     </li>
@@ -150,7 +150,7 @@ function Home3Team() {
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/">
+                      <a href="https://twitter.com/pacific_nig">
                         <i className="bx bxl-twitter" />
                       </a>
                     </li>

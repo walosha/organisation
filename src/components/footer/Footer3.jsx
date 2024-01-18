@@ -229,7 +229,7 @@ function Footer3() {
                       </a>
                     </li>
                     {/* <li>
-                      <a href="https://twitter.com/">
+                      <a href="https://twitter.com/pacific_nig">
                         <i className="bx bxl-twitter" />
                       </a>
                     </li> */}

@@ -56,13 +56,24 @@ function Banner3() {
       <div className="social-area">
         <ul>
           <li>
-            <a href="https://web.facebook.com/ppslimited">
-              <i className="bx bxl-facebook" />
+            <a href="https://www.linkedin.com/company/pacific-technology-service">
+              <i className="bx bxl-linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/pacific_nig">
+              <i className="bx bxl-twitter" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/pacificprofessional">
               <i className="bx bxl-instagram" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://web.facebook.com/ppslimited">
+              <i className="bx bxl-facebook" />
             </a>
           </li>
         </ul>
