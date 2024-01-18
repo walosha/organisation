@@ -97,17 +97,19 @@ function Testimonial3() {
                     </div>
                     <div className="testimonial-content">
                       <p>
-                        “Integer purus odio, placerat nec rhoncus in,
-                        ullamcorper nec dolor. and utoor himenaeos. Praesent nec
-                        neque at dolor venenatis consectetur european gon Donec
-                        lacinia placerat felis non aliquam.”
+                        “Working with Pacific Tech has been a game-changer for
+                        our business. Their expertise in crafting innovative
+                        software solutions surpassed our expectations. From the
+                        initial consultation to the final delivery, their team
+                        demonstrated a deep understanding of our needs and
+                        industry trends”
                       </p>
                     </div>
                     <div className="testimonial-btm">
                       <div className="author-area">
                         <div className="author-content">
-                          <h4>Mateo Daniel</h4>
-                          <span>CEO At atlantis.com</span>
+                          <h4>Dave Linus</h4>
+                          <span>CEO At https://www.thir13entravels.com</span>
                         </div>
                       </div>
                       <div className="review-date-and-time">
