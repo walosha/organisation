@@ -5,7 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Chat Bots for App */}
-
+        <meta
+          name="google-site-verification"
+          content="KhEF5zGLDdw3yLbzDVUZUvk8hRid_oGY3mX3NKDQuTI"
+        />
         <script
           async
           dangerouslySetInnerHTML={{
