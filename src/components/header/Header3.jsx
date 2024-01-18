@@ -132,7 +132,6 @@ function Header3() {
               </div>
             </div>
           </div>
-          {/* <img src="assets/images/bg/office1.png" alt="image"> */}
         </div>
         <div className="follow-area">
           <h5 className="blog-widget-title">Follow Us</h5>
@@ -169,7 +168,8 @@ function Header3() {
               <img
                 alt="image"
                 className="img-fluid"
-                src="assets/img/logo_small_light.png"
+                style={{ height: "5rem" }}
+                src="assets/img/logo_main.png"
               />
             </a>
           </Link>
