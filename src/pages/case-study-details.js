@@ -162,15 +162,13 @@ function CaseStudyDetailsPage() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="case-content mb-60">
-                    <h2>Process</h2>
+                    <h2>Continuous development</h2>
                     <p>
-                      Interdum et malesuada fames ac ante ipsum primis in
-                      faucibus. Etiam eu nibh elementum, accumsan ona neque ac,
-                      aliquet nunc. In eu ipsum fringilla, accumsan purus vel,
-                      pellentesque risus. Vivamus vehicula nl pellentesque quis
-                      magna eu vestibulum. Ut sed Vivamus vehicula noted by thi
-                      ut, hendrerit vel tortor. In pharetra lectus luctus ornare
-                      sollicitudin.
+                      We recognize that the technological landscape is
+                      ever-evolving, and as a software agency, we understand the
+                      importance of staying ahead of the curve to make life
+                      easier for our clients and contribute to their business
+                      success.
                     </p>
                   </div>
                 </div>
