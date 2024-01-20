@@ -98,7 +98,7 @@ function Testimonial3() {
                     <div className="testimonial-content">
                       <p>
                         “Working with Pacific Tech has been a game-changer for
-                        our business. Their expertise in crafting innovative
+                        our business. Their Teame in crafting innovative
                         software solutions surpassed our expectations. From the
                         initial consultation to the final delivery, their team
                         demonstrated a deep understanding of our needs and
@@ -153,7 +153,7 @@ function Testimonial3() {
                     </div>
                     <div className="testimonial-content">
                       <p>
-                        “Their Web Development expertise is unparalleled. From
+                        “Their Web Development Teame is unparalleled. From
                         conceptualization to execution, their team delivered a
                         website that exceeded our expectations. Their attention
                         to detail, creative flair, and commitment to deadlines

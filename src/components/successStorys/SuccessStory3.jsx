@@ -86,12 +86,12 @@ function SuccessStory3() {
                     <div className="success-content">
                       <span>Web development</span>
                       <h3>
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="#">
                           <a>Streamlining IT Infrastructure</a>
                         </Link>
                       </h3>
                       <div className="view-btn">
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <svg
                               width={12}
@@ -120,12 +120,12 @@ function SuccessStory3() {
                     <div className="success-content">
                       <span>Web development</span>
                       <h3>
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>Transforming Customer Experience</a>
                         </Link>
                       </h3>
                       <div className="view-btn">
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <svg
                               width={12}
@@ -154,12 +154,12 @@ function SuccessStory3() {
                     <div className="success-content">
                       <span>Web development</span>
                       <h3>
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>Scaling Agile Development</a>
                         </Link>
                       </h3>
                       <div className="view-btn">
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <svg
                               width={12}
@@ -188,12 +188,12 @@ function SuccessStory3() {
                     <div className="success-content">
                       <span>Web development</span>
                       <h3>
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>Optimizing IT Operations</a>
                         </Link>
                       </h3>
                       <div className="view-btn">
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <svg
                               width={12}
@@ -222,12 +222,12 @@ function SuccessStory3() {
                     <div className="success-content">
                       <span>Web development</span>
                       <h3>
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>Maximizing Efficiency with DevOps</a>
                         </Link>
                       </h3>
                       <div className="view-btn">
-                        <Link legacyBehavior href="/project-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <svg
                               width={12}

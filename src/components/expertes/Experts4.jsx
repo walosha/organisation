@@ -59,7 +59,7 @@ function Experts4() {
             <div className="section-title-4 text-center two">
               <span>Experts &amp; Talented Staff</span>
               <h2>
-                We Have <span>Top Class Expertise</span> For Creative Service
+                We Have <span>Top Class Teame</span> For Creative Service
               </h2>
             </div>
           </div>

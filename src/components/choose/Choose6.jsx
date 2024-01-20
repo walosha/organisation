@@ -126,7 +126,7 @@ function Choose6() {
                         <div className="content">
                           <h4>Keyword</h4>
                           <p>
-                            Unlocking the power of words – our expertise in
+                            Unlocking the power of words – our Teame in
                             strategically chosen keywords amplifies your online
                             presence, ensuring your message resonates and
                             reaches the right audience effectively{" "}

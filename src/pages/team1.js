@@ -5,7 +5,7 @@ import React from "react";
 function Team1() {
   return (
     <Layout>
-      <Breadcrumb pageList="Team" title="Meet Our Expertis" pageName="TEAM" />
+      <Breadcrumb pageList="Team" title="Meet Our Team" pageName="TEAM" />
       <div className="home3-team-area sec-mar">
         <div className="container">
           <div className="row">
