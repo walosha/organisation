@@ -8,7 +8,7 @@ function ProjectPage() {
     <Layout>
       <Breadcrumb
         pageList="Projects"
-        title="Our Complited Projects"
+        title="Our excellent Projects"
         pageName="PROJECTS"
       />
       <div className="home3-success-stories-area two sec-mar">

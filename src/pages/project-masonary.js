@@ -17,7 +17,7 @@ function ProjectMasonaryPage() {
     <Layout>
       <Breadcrumb
         pageList="Projects Masonary"
-        title="Our Complited Projects"
+        title="Our excellent Projects"
         pageName="PROJECTS MASONARY"
       />
       <div className="portfolio-masonary-page sec-mar">

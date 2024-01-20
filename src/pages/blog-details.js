@@ -230,14 +230,7 @@ function BlogDetailsPage() {
                     </div>
                   </div>
                 </div>
-                <h3>arcu at mauris facilisis fermentum</h3>
-                <p>
-                  urna Aenean onewaryzo eleifend vitae tellus a facilisis. Nunc
-                  posuere at augue eget portat Inei odio tellus, dignissim
-                  fermentumara purus nec, consequat dapibus metus.Vivamus one
-                  urna worlda mauris, faucibus at egestas quis, fermentum
-                  egetonav neque.
-                </p>
+
                 <div className="blog-tag-and-social">
                   <div className="tag">
                     <h6>Tag:</h6>
@@ -324,7 +317,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>Web Design</span>{" "}
-                          <span className="number-of-categoris">(30)</span>
+                          <span className="number-of-categoris">(1)</span>
                         </a>
                       </Link>
                     </li>
@@ -332,7 +325,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>Apps Development</span>{" "}
-                          <span className="number-of-categoris">(18)</span>{" "}
+                          <span className="number-of-categoris">(2)</span>{" "}
                         </a>
                       </Link>
                     </li>
@@ -340,7 +333,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>Software Development</span>{" "}
-                          <span className="number-of-categoris">(21)</span>
+                          <span className="number-of-categoris">(0)</span>
                         </a>
                       </Link>
                     </li>
@@ -348,7 +341,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>Motion Graphics</span>{" "}
-                          <span className="number-of-categoris">(25)</span>
+                          <span className="number-of-categoris">(0)</span>
                         </a>
                       </Link>
                     </li>
@@ -356,7 +349,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>UI/UX Design</span>{" "}
-                          <span className="number-of-categoris">(29)</span>
+                          <span className="number-of-categoris">(0)</span>
                         </a>
                       </Link>
                     </li>
@@ -364,7 +357,7 @@ function BlogDetailsPage() {
                       <Link legacyBehavior href="/blog">
                         <a>
                           <span>UI/UX Design</span>{" "}
-                          <span className="number-of-categoris">(31)</span>
+                          <span className="number-of-categoris">(0)</span>
                         </a>
                       </Link>
                     </li>
@@ -377,10 +370,10 @@ function BlogDetailsPage() {
                   <div className="recent-post-wraper">
                     <div className="widget-cnt">
                       <div className="wi">
-                        <Link legacyBehavior href="/blog-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/blog-sidebar-1.png"
+                              src="assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -388,8 +381,8 @@ function BlogDetailsPage() {
                       </div>
                       <div className="wc">
                         <h6>
-                          <Link legacyBehavior href="/blog-details">
-                            <a>Grant Distributions Conti nu to Incr Ease.</a>
+                          <Link legacyBehavior href="/">
+                            <a>3 tools increasing your productivity .</a>
                           </Link>
                         </h6>
                         <Link legacyBehavior href="/blog">
@@ -399,10 +392,10 @@ function BlogDetailsPage() {
                     </div>
                     <div className="widget-cnt">
                       <div className="wi">
-                        <Link legacyBehavior href="/blog-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/blog-sidebar-2.png"
+                              src="assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -410,21 +403,21 @@ function BlogDetailsPage() {
                       </div>
                       <div className="wc">
                         <h6>
-                          <Link legacyBehavior href="/blog-details">
-                            <a>Distributions Conti nu to grant Incr Ease.</a>
+                          <Link legacyBehavior href="/">
+                            <a>10 Mistakes to Avoid When Using Cypress</a>
                           </Link>
                         </h6>
                         <Link legacyBehavior href="/blog">
-                          <a>May 15, 2023</a>
+                          <a>December 15, 2023</a>
                         </Link>
                       </div>
                     </div>
                     <div className="widget-cnt">
                       <div className="wi">
-                        <Link legacyBehavior href="/blog-details">
+                        <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/blog-sidebar-3.png"
+                              src="assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -432,12 +425,15 @@ function BlogDetailsPage() {
                       </div>
                       <div className="wc">
                         <h6>
-                          <Link legacyBehavior href="/blog-details">
-                            <a>Conti nu to Incr Ease malesuada sapien sed.</a>
+                          <Link legacyBehavior href="/">
+                            <a>
+                              GraphQL benefits and why you should adopt it in
+                              2024
+                            </a>
                           </Link>
                         </h6>
                         <Link legacyBehavior href="/blog">
-                          <a>May 14, 2023</a>
+                          <a>January 14, 2023</a>
                         </Link>
                       </div>
                     </div>
@@ -490,7 +486,10 @@ function BlogDetailsPage() {
                     </Link>
                     <h4>
                       <Link legacyBehavior href="/blog-details">
-                        <a>Feugiat Varius Mattis Mass Enim Est Egestas.</a>
+                        <a>
+                          If You're a Facebook User, Thousands of Companies Are
+                          Watching You.
+                        </a>
                       </Link>
                     </h4>
                   </div>
@@ -540,7 +539,10 @@ function BlogDetailsPage() {
                     </Link>
                     <h4>
                       <Link legacyBehavior href="/blog-details">
-                        <a>Donec Finibus Laoreet Exte Eu Pellentesque.</a>
+                        <a>
+                          How to Deploy an Nestjs App in AWS EC2 via github
+                          actions from Docker Image
+                        </a>
                       </Link>
                     </h4>
                   </div>
@@ -554,15 +556,12 @@ function BlogDetailsPage() {
                 <h3>2 Comment</h3>
                 <div className="single-comment">
                   <div className="author-thumb">
-                    <img
-                      src="assets/img/inner-pages/comment-img-01.png"
-                      alt=""
-                    />
+                    <img src="assets/img/inner-pages/person.jpg" alt="" />
                   </div>
                   <div className="comment-content">
                     <div className="author-post">
                       <div className="author-info">
-                        <h4>Polard Girdet</h4>
+                        <h4>Lekan Agbaje</h4>
                         <span>02 June,2023 &nbsp; &nbsp; 01.56 pm</span>
                       </div>
                       <div className="reply">
@@ -572,26 +571,17 @@ function BlogDetailsPage() {
                         </a>
                       </div>
                     </div>
-                    <p>
-                      Odio tellus, dignissim fermentumara purus nec, consequat
-                      dapibus metus.Vivamusut urna world classo mauris, faucibus
-                      at egestas quis, fermentum egetonav neque. Duisonajt
-                      pharetra lectus nec risusonota and we are always support
-                      our customer support available.
-                    </p>
+                    <p>Insigtful article</p>
                   </div>
                 </div>
                 <div className="single-comment">
                   <div className="author-thumb">
-                    <img
-                      src="assets/img/inner-pages/comment-img-02.png"
-                      alt=""
-                    />
+                    <img src="assets/img/inner-pages/person.jpg" alt="" />
                   </div>
                   <div className="comment-content">
                     <div className="author-post">
                       <div className="author-info">
-                        <h4>Andrew Watson</h4>
+                        <h4>Andrew Ebem</h4>
                         <span>02 June,2023 &nbsp; &nbsp; 01.56 pm</span>
                       </div>
                       <div className="reply">
@@ -601,13 +591,7 @@ function BlogDetailsPage() {
                         </a>
                       </div>
                     </div>
-                    <p>
-                      Odio tellus, dignissim fermentumara purus nec, consequat
-                      dapibus metus.Vivamusut urna world classo mauris, faucibus
-                      at egestas quis, fermentum egetonav neque. Duisonajt
-                      pharetra lectus nec risusonota and we are always support
-                      our customer support available.
-                    </p>
+                    <p>Mobile app development has gained lots of tractions!</p>
                   </div>
                 </div>
               </div>
