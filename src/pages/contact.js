@@ -111,7 +111,12 @@ function Contactpage() {
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
                           <label>first name</label>
-                          <input id="name" name="name" type="text" />
+                          <input
+                            required
+                            id="firstName"
+                            name="firstName"
+                            type="text"
+                          />
                         </div>
                       </div>
                       <div className="col-md-6 mb-20">
@@ -123,26 +128,41 @@ function Contactpage() {
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Company/Organization</label>
-                          <input type="text" />
+                          <input
+                            id="organisation"
+                            name="organisation"
+                            type="text"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Email</label>
-                          <input id="email" name="email" type="email" />
+                          <input
+                            required
+                            id="email"
+                            name="email"
+                            type="email"
+                          />
                         </div>
                       </div>
-                      {/* <div className="col-lg-12 mb-20">
+                      <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Phone</label>
-                          <input type="email" />
+                          <input
+                            required
+                            name="phone"
+                            id="phone"
+                            type="email"
+                          />
                         </div>
-                      </div> */}
+                      </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Message</label>
                           <textarea
                             id="message"
+                            required
                             name="message"
                             defaultValue={""}
                           />
