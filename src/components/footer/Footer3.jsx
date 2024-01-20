@@ -1,7 +1,21 @@
+import { Axios } from "axios";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 function Footer3() {
+  const [email, setEmail] = useState("");
+  const onSubmit = function submit(e) {
+    e.preventDefault();
+    Axios.post("/api/audience", { email }).then((res) => {
+      console.log({ response: res });
+    });
+  };
+
+  const onChange = (e) => {
+    setEmail(e.target.value);
+    console.log({ event: e.target.value });
+  };
+
   return (
     <footer>
       <div className="footer-top">
@@ -88,8 +102,12 @@ function Footer3() {
                 <h6>See Our New updates</h6>
                 <form>
                   <div className="form-inner">
-                    <input type="text" placeholder="Email here..." />
-                    <button type="submit">
+                    <input
+                      onChange={onChange}
+                      type="text"
+                      placeholder="Email here..."
+                    />
+                    <button onClick={onSubmit}>
                       <svg
                         width={17}
                         height={17}
