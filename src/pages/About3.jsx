@@ -83,10 +83,10 @@ function About3() {
                 <div className="exp-text">
                   <img src="assets/img/home-3/rotate-text.png" alt="" />
                 </div>
-                <div className="years">
+                <div className="excellent">
                   <h2>
                     5<br />
-                    <span>Years</span>
+                    <span>excellent</span>
                   </h2>
                 </div>
               </div>
