@@ -10,6 +10,7 @@ function Footer3() {
     axios
       .post("/api/audience", { email })
       .then((res) => {
+        console.log({ res });
         if (res.status == 200) {
           setStatus("SUCCESS");
           setEmail("");
@@ -130,7 +131,7 @@ function Footer3() {
                 </form>
                 <br />
                 {status == "SUCCESS" && <h6>Thank You!</h6>}
-                {status == "ERROR" && <h6>TRY AGAIN</h6>}
+                {status == "ERROR" && <h6>excellent</h6>}
               </div>
             </div>
           </div>
