@@ -1,19 +1,26 @@
-import { Axios } from "axios";
+import axios from "axios";
 import Link from "next/link";
 import React, { useState } from "react";
 
 function Footer3() {
   const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
   const onSubmit = function submit(e) {
     e.preventDefault();
-    Axios.post("/api/audience", { email }).then((res) => {
-      console.log({ response: res });
-    });
+    axios
+      .post("/api/audience", { email })
+      .then((res) => {
+        if (res.statusText == "OK") {
+          setStatus("SUCCESS");
+          setEmail("");
+        } else {
+          setStatus("ERROR");
+        }
+      })
+      .catch((error) => console.log({ error }));
   };
-
   const onChange = (e) => {
     setEmail(e.target.value);
-    console.log({ event: e.target.value });
   };
 
   return (
@@ -104,7 +111,8 @@ function Footer3() {
                   <div className="form-inner">
                     <input
                       onChange={onChange}
-                      type="text"
+                      type="email"
+                      value={email}
                       placeholder="Email here..."
                     />
                     <button onClick={onSubmit}>
@@ -120,6 +128,9 @@ function Footer3() {
                     </button>
                   </div>
                 </form>
+                <br />
+                {status == "SUCCESS" && <h6>Thank You!</h6>}
+                {status == "ERROR" && <h6>TRY AGAIN</h6>}
               </div>
             </div>
           </div>
