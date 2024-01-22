@@ -1,10 +1,23 @@
 import BlogBanner from "@/components/blog/BlogBanner";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import blogData from "../data/blogData.json";
 import Link from "next/link";
+import useHttpClient from "@/hooks/useHttpClient";
+
 function BlogPgage() {
+  const [contentList, setContentList] = useState([]);
+  const { isLoading, sendReq, error, clearError } = useHttpClient();
+
+  useEffect(() => {
+    getItem();
+  }, []);
+
+  async function getItem() {
+    const data = await sendReq(`/api/post?take=6&page=1`, "GET");
+    setContentList(data.data.items);
+  }
   return (
     <Layout>
       <Breadcrumb
@@ -16,8 +29,8 @@ function BlogPgage() {
       <div className="home3-blog-area sec-mar">
         <div className="container">
           <div className="row g-lg-4 gy-5">
-            {blogData.map((item) => {
-              const { id, category, img, date, count_comment, title } = item;
+            {contentList.map((item) => {
+              const { id, image, createdAt, title } = item;
               return (
                 <div
                   key={id}
@@ -27,10 +40,10 @@ function BlogPgage() {
                 >
                   <div className="single-blog magnetic-item">
                     <div className="blog-img">
-                      <img className="img-fluid" src={img} alt="" />
+                      <img className="img-fluid" src={image} alt="" />
                       <div className="blog-tag">
                         <Link legacyBehavior href="/blog">
-                          <a>{category}</a>
+                          <a>Web development</a>
                         </Link>
                       </div>
                     </div>
@@ -38,23 +51,23 @@ function BlogPgage() {
                       <ul className="blog-meta">
                         <li>
                           <Link legacyBehavior href="/blog">
-                            <a>{date}</a>
+                            <a>{createdAt}</a>
                           </Link>
                         </li>
                         <li>
                           <Link legacyBehavior href="/blog">
-                            <a>Comment ({count_comment})</a>
+                            <a>Comment (0)</a>
                           </Link>
                         </li>
                       </ul>
                       <h4>
-                        <Link legacyBehavior href="/blog-details">
+                        <Link legacyBehavior href={"/blog-details/" + id}>
                           <a>{title}</a>
                         </Link>
                       </h4>
                       <div className="blog-footer">
                         <div className="read-btn">
-                          <Link legacyBehavior href="/blog-details">
+                          <Link legacyBehavior href={"/blog-details/" + id}>
                             <a>
                               Read More
                               <svg

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
-import BlogBanner from "../components/blog/BlogBanner";
-import Breadcrumb from "../components/common/Breadcrumb";
-import Layout from "../components/layout/Layout";
+import BlogBanner from "../../components/blog/BlogBanner";
+import Breadcrumb from "../../components/common/Breadcrumb";
+import Layout from "../../components/layout/Layout";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import useHttpClient from "@/hooks/useHttpClient";
 import SyntaxHighlight from "@/components/SyntaxHighlight/SyntaxHighlight";
+import { useRouter } from "next/router";
 
 function BlogDetailsPage() {
+  const {
+    query: { id },
+  } = useRouter();
   const [content, setContent] = useState({
     title: "",
     body: "",
@@ -15,17 +19,32 @@ function BlogDetailsPage() {
     tags: "",
     titleURL: "",
   });
-  const { isLoading, sendReq, error, clearError } = useHttpClient();
 
+  const [prevNxt, setPrevNxt] = useState({
+    previousPost: null,
+    nextPost: null,
+  });
+
+  const { isLoading, sendReq, error, clearError } = useHttpClient();
   useEffect(() => {
     getItem();
-  }, []);
+    getPrevNxt();
+  }, [id]);
 
   async function getItem() {
-    const data = await sendReq(`/api/post`, "GET");
+    const data = await sendReq(`/api/post/${id}`, "GET");
     setContent(data.data);
     console.log(data.data);
   }
+
+  async function getPrevNxt() {
+    const data = await sendReq(`/api/post/prevNext?id=${id}`, "GET");
+    setPrevNxt({
+      previousPost: data.data.previousPost,
+      nextPost: data.data.nextPost,
+    });
+  }
+  // console.log({ prevNxt.previousPost });
 
   return (
     <Layout>
@@ -347,74 +366,84 @@ function BlogDetailsPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="details-navigation">
-                <div className="single-navigation">
-                  <div className="content">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>Previous</a>
-                    </Link>
-                    <h4>
-                      <Link legacyBehavior href="/blog-details">
-                        <a>
-                          If You're a Facebook User, Thousands of Companies Are
-                          Watching You.
-                        </a>
+                {prevNxt?.previousPost?.id && (
+                  <div className="single-navigation">
+                    <div className="content">
+                      <Link
+                        legacyBehavior
+                        href={"/blog-details/" + +prevNxt?.previousPost?.id}
+                      >
+                        <a>Previous</a>
                       </Link>
-                    </h4>
-                  </div>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="img">
-                      <img
-                        src="assets/img/inner-pages/portfolio-navigation-01.png"
-                        alt=""
-                      />
-                      <div className="arrow">
-                        <svg
-                          width={12}
-                          height={12}
-                          viewBox="0 0 13 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                      <h4>
+                        <Link
+                          legacyBehavior
+                          href={"/blog-details/" + prevNxt?.previousPost?.id}
                         >
-                          <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                        </svg>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-                <div className="single-navigation two">
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="img">
-                      <img
-                        src="assets/img/inner-pages/portfolio-navigation-02.png"
-                        alt=""
-                      />
-                      <div className="arrow">
-                        <svg
-                          width={12}
-                          height={12}
-                          viewBox="0 0 13 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                        </svg>
-                      </div>
-                    </a>
-                  </Link>
-                  <div className="content">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>NEXT</a>
+                          <a>{prevNxt?.previousPost?.title || ""}</a>
+                        </Link>
+                      </h4>
+                    </div>
+                    <Link
+                      legacyBehavior
+                      href={"/blog-details/" + prevNxt?.previousPost?.id}
+                    >
+                      <a className="img">
+                        <img src={prevNxt?.previousPost?.image} alt="" />
+                        <div className="arrow">
+                          <svg
+                            width={12}
+                            height={12}
+                            viewBox="0 0 13 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0 1H12M12 1V13M12 1L0.5 12" />
+                          </svg>
+                        </div>
+                      </a>
                     </Link>
-                    <h4>
-                      <Link legacyBehavior href="/blog-details">
-                        <a>
-                          How to Deploy an Nestjs App in AWS EC2 via github
-                          actions from Docker Image
-                        </a>
-                      </Link>
-                    </h4>
                   </div>
-                </div>
+                )}
+                {prevNxt?.nextPost?.id && (
+                  <div className="single-navigation two">
+                    <Link
+                      legacyBehavior
+                      href={"/blog-details/" + prevNxt?.nextPost?.id}
+                    >
+                      <a className="img">
+                        <img src={prevNxt?.nextPost?.image} alt="" />
+                        <div className="arrow">
+                          <svg
+                            width={12}
+                            height={12}
+                            viewBox="0 0 13 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0 1H12M12 1V13M12 1L0.5 12" />
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                    <div className="content">
+                      <Link
+                        legacyBehavior
+                        href={"/blog-details/" + prevNxt?.nextPost?.id}
+                      >
+                        <a>NEXT</a>
+                      </Link>
+                      <h4>
+                        <Link
+                          legacyBehavior
+                          href={"/blog-details/" + prevNxt?.nextPost?.id}
+                        >
+                          <a>{prevNxt?.nextPost?.title || ""}</a>
+                        </Link>
+                      </h4>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

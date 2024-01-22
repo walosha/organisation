@@ -11,29 +11,35 @@ model User {
   id        String     @id @default(cuid())
   email     String     @unique
   name      String?
-  image     String?
+  image     String? @default("https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1974&auto=format")
   posts     Post[]
   commments Commment[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
 }
 
 model Post {
   id        String     @id @default(cuid())
   title     String
   body      String
-  image     String
+  image     String? @default("https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1974&auto=format")
   tags      String?
   titleURL  String
   published Boolean    @default(false)
   author    User       @relation(fields: [authorId], references: [id])
   authorId  String
   commments Commment[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
 }
 
 model Commment {
-  id       String  @id @default(cuid())
-  content  String?
-  author   User    @relation(fields: [authorId], references: [id])
-  authorId String
-  post     Post    @relation(fields: [postId], references: [id])
-  postId   String
+  id        String   @id @default(cuid())
+  content   String?
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  String
+  post      Post     @relation(fields: [postId], references: [id])
+  postId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

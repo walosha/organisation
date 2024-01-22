@@ -169,7 +169,7 @@ function Header3() {
                 alt="image"
                 className="img-fluid"
                 style={{ height: "5rem" }}
-                src="assets/img/logo_main.png"
+                src="/assets/img/logo_main.png"
               />
             </a>
           </Link>
@@ -330,7 +330,7 @@ function Header3() {
             </li>
             <li className="menu-item">
               <a
-                href="/blog-masonary"
+                href="/blog"
                 className={`drop-down ${
                   state.activeMenu === "blog" ? "active" : ""
                 }`}
