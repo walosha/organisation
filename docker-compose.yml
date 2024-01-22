@@ -1,0 +1,14 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - pts:/data/postgres
+    environment:
+      POSTGRES_USER: pts
+      POSTGRES_PASSWORD: pts
+      POSTGRES_DB: pts
+volumes:
+  pts:
