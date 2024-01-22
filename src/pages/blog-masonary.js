@@ -2,7 +2,7 @@ import BlogBanner from "../components/blog/BlogBanner";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Layout from "../components/layout/Layout";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function BlogMasonaryPage() {
   return (
@@ -96,6 +96,7 @@ function BlogMasonaryPage() {
               </div>
             </div>
           </div>
+
           <div className="row">
             <nav aria-label="Page navigation example">
               <ul className="pagination justify-content-center">

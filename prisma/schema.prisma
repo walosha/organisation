@@ -8,34 +8,32 @@ datasource db {
 }
 
 model User {
-  id    String       @id @default(cuid())
-  email String  @unique
-  name  String?
-  posts Post[]
+  id        String     @id @default(cuid())
+  email     String     @unique
+  name      String?
+  image     String?
+  posts     Post[]
   commments Commment[]
 }
 
 model Post {
-  id         String       @id @default(cuid())
+  id        String     @id @default(cuid())
   title     String
-  body   String
-  image   String
-  tags   String?
-  titleURL String 
-  published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
+  body      String
+  image     String
+  tags      String?
+  titleURL  String
+  published Boolean    @default(false)
+  author    User       @relation(fields: [authorId], references: [id])
   authorId  String
   commments Commment[]
 }
 
-
-
 model Commment {
-  id        String       @id @default(cuid())
-  content   String?
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  String
-  post    Post      @relation(fields: [postId], references: [id])
-  postId  String
+  id       String  @id @default(cuid())
+  content  String?
+  author   User    @relation(fields: [authorId], references: [id])
+  authorId String
+  post     Post    @relation(fields: [postId], references: [id])
+  postId   String
 }
-

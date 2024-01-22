@@ -1,15 +1,37 @@
+import React, { useEffect, useState } from "react";
 import BlogBanner from "../components/blog/BlogBanner";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Layout from "../components/layout/Layout";
 import Link from "next/link";
-import React from "react";
+import ReactMarkdown from "react-markdown";
+import useHttpClient from "@/hooks/useHttpClient";
+import SyntaxHighlight from "@/components/SyntaxHighlight/SyntaxHighlight";
 
 function BlogDetailsPage() {
+  const [content, setContent] = useState({
+    title: "",
+    body: "",
+    image: "",
+    tags: "",
+    titleURL: "",
+  });
+  const { isLoading, sendReq, error, clearError } = useHttpClient();
+
+  useEffect(() => {
+    getItem();
+  }, []);
+
+  async function getItem() {
+    const data = await sendReq(`/api/post`, "GET");
+    setContent(data.data);
+    console.log(data.data);
+  }
+
   return (
     <Layout>
       <Breadcrumb
         pageList="BLOG MASONARY"
-        title="Exploring The Pacific-tech Blog"
+        title={content.title}
         pageName="Blog"
       />
       <BlogBanner />
@@ -30,7 +52,7 @@ function BlogDetailsPage() {
             <div className="col-lg-8">
               <div className="blog-details-content">
                 <span>Software</span>
-                <h2>Insights Of Exploring Technology</h2>
+                <h2>{content.title}</h2>
                 <div className="author-and-meta">
                   <div className="author-area">
                     <div className="author-img">
@@ -73,163 +95,9 @@ function BlogDetailsPage() {
                     </li>
                   </ul>
                 </div>
-                <h1>Recent Trends in Mobile App Development</h1>
-
-                <p>
-                  Recent years have witnessed unprecedented growth in mobile app
-                  development, with millions of people relying on mobile apps in
-                  their daily lives. This surge in demand has paved the way for
-                  numerous emerging trends in mobile app development, which both
-                  developers and businesses must consider. As technology
-                  advances, mobile app development is becoming increasingly
-                  popular and competitive, requiring developers and businesses
-                  to keep up with the latest trends and techniques to remain
-                  relevant and meet consumer expectations.
-                </p>
-
-                <p>
-                  Therefore, staying updated on the latest trends in mobile app
-                  development is crucial for businesses and developers to thrive
-                  and succeed in the industry. The purpose of this article is to
-                  shed light on some of these trends and their significance for
-                  the mobile app development industry.
-                </p>
-
-                <h2>Cross-platform Development</h2>
-
-                <p>
-                  One of the most significant trends in mobile app development
-                  is the move towards cross-platform development. Cross-platform
-                  development allows developers to create apps that work across
-                  multiple operating systems, such as iOS and Android, with a
-                  single codebase. This approach can save time and resources, as
-                  developers only need to create one version of the app instead
-                  of separate versions for each operating system.
-                </p>
-
-                <h2>Internet of Things (IoT) Integration</h2>
-
-                <p>
-                  As the Internet of Things continues to expand, more and more
-                  devices are being connected to the internet. This presents an
-                  opportunity for mobile app developers to create apps that
-                  integrate with IoT devices, such as smart home appliances and
-                  wearables. This can allow users to control their devices
-                  through their mobile apps and can provide businesses with
-                  valuable data on user behavior and preferences.
-                </p>
-
-                <blockquote>
-                  <p>
-                    "Emerging trends in mobile app development offer new
-                    opportunities for businesses to create more innovative and
-                    engaging mobile apps that can cater to the evolving needs of
-                    their users."
-                  </p>
-                  <h3>Olawale Afuye</h3>
-                  <div className="bolckquote-icons">
-                    <img
-                      className="blockquote-icon-01"
-                      src="assets/img/inner-pages/blockquote-icon-01.svg"
-                      alt=""
-                    />
-                    <img
-                      className="blockquote-icon-02"
-                      src="assets/img/inner-pages/blockquote-icon-02.svg"
-                      alt=""
-                    />
-                  </div>
-                </blockquote>
-                <h3>Our Begin Now To Beingonl</h3>
-                <h2>Augmented Reality (AR) and Virtual Reality (VR)</h2>
-
-                <p>
-                  AR and VR are rapidly emerging technologies that are gaining
-                  popularity in mobile app development. AR allows developers to
-                  create apps that overlay digital information on top of the
-                  real world, while VR creates a completely immersive experience
-                  for users. These technologies can be used to create engaging
-                  and interactive mobile apps for entertainment, education, and
-                  more.
-                </p>
-
-                <h2>Artificial Intelligence (AI)</h2>
-
-                <p>
-                  AI is becoming increasingly important in mobile app
-                  development, as it allows apps to become smarter and more
-                  personalized for individual users. AI can be used to provide
-                  personalized recommendations, predictive analytics, and even
-                  natural language processing for chatbots and virtual
-                  assistants.
-                </p>
-
-                <h2>Cloud-based Apps</h2>
-
-                <p>
-                  Cloud-based apps are becoming more popular, as they allow
-                  users to access their data from anywhere with an internet
-                  connection. These apps can also be more easily updated and
-                  maintained, as updates can be pushed out to all users at once.
-                  Additionally, cloud-based apps can be more cost-effective, as
-                  businesses don’t need to invest in as much hardware or
-                  infrastructure.
-                </p>
-
-                <p>
-                  Emerging trends in mobile app development offer new
-                  opportunities for businesses to create more innovative and
-                  engaging mobile apps that can cater to the evolving needs of
-                  their users. By keeping up with these trends, developers and
-                  businesses can ensure that their apps remain relevant and
-                  competitive in a rapidly changing market. With cross-platform
-                  development, IoT integration, AR and VR, AI, and cloud-based
-                  apps, businesses can transform the way they interact with
-                  their customers, offering more personalized and engaging
-                  experiences that can drive user engagement and business
-                  growth. To learn more about how you can take advantage of
-                  these trends for your business, please do not hesitate to
-                  contact us by clicking on the “get in touch” button located at
-                  the top right corner of this page. We offer a free 30-minute
-                  consultation to help you explore your options and make an
-                  informed decision that aligns with your business goals.
-                </p>
-
-                <div className="blog-details-img-group">
-                  <div className="row g-4">
-                    <div className="col-lg-6">
-                      <div className="blog-details-img magnetic-item">
-                        <img
-                          className="img-fluid"
-                          src="assets/img/inner-pages/blog-dt-02.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="row g-4">
-                        <div className="col-lg-12">
-                          <div className="blog-details-img magnetic-item">
-                            <img
-                              className="img-fluid"
-                              src="assets/img/inner-pages/blog-dt-03.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="blog-details-img magnetic-item">
-                            <img
-                              className="img-fluid"
-                              src="assets/img/inner-pages/blog-dt-04.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ReactMarkdown components={SyntaxHighlight}>
+                  {content.body}
+                </ReactMarkdown>
 
                 <div className="blog-tag-and-social">
                   <div className="tag">

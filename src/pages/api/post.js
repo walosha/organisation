@@ -9,10 +9,17 @@ export const config = {
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    await createPost(req, res);
+    return await createPost(req, res);
   } else {
-    res.status(200).json({ name: "John Doe" });
+    return await fetchPost(req, res);
   }
+}
+
+async function fetchPost(req, res) {
+  const post = await prisma.post.findFirst();
+  return res
+    .status(200)
+    .json({ data: post, message: "Post fetched successfully" });
 }
 
 async function createPost(req, res) {
