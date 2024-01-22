@@ -3,7 +3,7 @@ import formidable from "formidable";
 
 export const config = {
   api: {
-    bodyParser: false, // Disable the default body parsing
+    bodyParser: false,
   },
 };
 
@@ -19,9 +19,7 @@ async function createPost(req, res) {
   const form = formidable({});
   form.parse(req, async (err, fields, files) => {
     if (err) reject({ err });
-    console.log({ fields, files });
     const { title, body, image, tags, titleURL } = fields;
-
     await prisma.post.create({
       data: {
         title: title[0],
@@ -34,7 +32,6 @@ async function createPost(req, res) {
         },
       },
     });
-
     res.status(200).json({ message: "Post created successfully" });
   });
 }

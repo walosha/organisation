@@ -19,10 +19,6 @@ export default function Home() {
     <>
       <Head>
         <meta
-          name="google-site-verification"
-          content="KhEF5zGLDdw3yLbzDVUZUvk8hRid_oGY3mX3NKDQuTI"
-        />
-        <meta
           property="og:title"
           content="Pacific Technology Service - Web & App Development Company"
         />
