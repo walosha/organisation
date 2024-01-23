@@ -58,13 +58,14 @@ function BlogDetailsPage() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="post-thumb magnetic-item">
+              {/* THE TOP IMAGE */}
+              {/* <div className="post-thumb magnetic-item">
                 <img
                   className="img-fluid"
                   src="/assets/img/inner-pages/blog-dt-01.png"
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="row g-lg-4 gy-5">
