@@ -1,4 +1,5 @@
 import useHttpClient from "@/hooks/useHttpClient";
+import { formatDate } from "@/utils";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -55,7 +56,7 @@ function Home3Blog() {
                     <ul className="blog-meta">
                       <li>
                         <Link legacyBehavior href="/blog">
-                          <a>{createdAt}</a>
+                          <a>{formatDate(createdAt)}</a>
                         </Link>
                       </li>
                       <li>

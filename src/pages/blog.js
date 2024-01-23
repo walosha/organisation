@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import blogData from "../data/blogData.json";
 import Link from "next/link";
 import useHttpClient from "@/hooks/useHttpClient";
+import { formatDate } from "@/utils";
 
 function BlogPgage() {
   const [contentList, setContentList] = useState([]);
@@ -51,7 +52,7 @@ function BlogPgage() {
                       <ul className="blog-meta">
                         <li>
                           <Link legacyBehavior href="/blog">
-                            <a>{createdAt}</a>
+                            <a>{formatDate(createdAt)}</a>
                           </Link>
                         </li>
                         <li>
