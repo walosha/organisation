@@ -51,7 +51,7 @@ function BlogDetailsPage() {
       nextPost: data.data.nextPost,
     });
   }
-  // console.log({ prevNxt.previousPost });
+  console.log({ contentList });
 
   return (
     <Layout>
@@ -262,10 +262,8 @@ function BlogDetailsPage() {
                     {contentList?.map(({ id, image, title, createdAt }) => (
                       <div className="widget-cnt">
                         <div className="wi">
-                          <Link legacyBehaviorhref={"/blog-details/" + id}>
-                            <a>
-                              <img src={image} alt="image" />
-                            </a>
+                          <Link legacyBehaviorhref href={"/blog-details/" + id}>
+                            <img src={image} alt="image" />
                           </Link>
                         </div>
                         <div className="wc">
