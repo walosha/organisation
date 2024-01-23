@@ -21,7 +21,6 @@ function BlogDetailsPage() {
     titleURL: "",
   });
   const [contentList, setContentList] = useState([]);
-
   const { isLoading, sendReq, error, clearError } = useHttpClient();
   useEffect(() => {
     getItemList();
