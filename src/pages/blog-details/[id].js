@@ -22,11 +22,14 @@ function BlogDetailsPage() {
   });
   const [contentList, setContentList] = useState([]);
 
+  const { isLoading, sendReq, error, clearError } = useHttpClient();
   useEffect(() => {
+    getItemList();
     getItem();
-  }, []);
+    getPrevNxt();
+  }, [id]);
 
-  async function getItem() {
+  async function getItemList() {
     const data = await sendReq(`/api/post?take=3&page=1`, "GET");
     setContentList(data.data.items);
   }
@@ -35,12 +38,6 @@ function BlogDetailsPage() {
     previousPost: null,
     nextPost: null,
   });
-
-  const { isLoading, sendReq, error, clearError } = useHttpClient();
-  useEffect(() => {
-    getItem();
-    getPrevNxt();
-  }, [id]);
 
   async function getItem() {
     const data = await sendReq(`/api/post/${id}`, "GET");
