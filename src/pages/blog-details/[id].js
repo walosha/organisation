@@ -158,7 +158,7 @@ function BlogDetailsPage() {
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/pacific_technology_service">
                           <i className="bx bxl-pinterest-alt" />
                         </a>
                       </li>
