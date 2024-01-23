@@ -61,7 +61,7 @@ function BlogDetailsPage() {
               <div className="post-thumb magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/inner-pages/blog-dt-01.png"
+                  src="/assets/img/inner-pages/blog-dt-01.png"
                   alt=""
                 />
               </div>
@@ -75,7 +75,7 @@ function BlogDetailsPage() {
                 <div className="author-and-meta">
                   <div className="author-area">
                     <div className="author-img">
-                      <img src="assets/img/home-3/wale.jpeg" alt="" />
+                      <img src="/assets/img/home-3/wale.jpeg" alt="" />
                     </div>
                     <div className="author-content">
                       <h6>
@@ -260,7 +260,7 @@ function BlogDetailsPage() {
                         <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/aricle.png"
+                              src="/assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -282,7 +282,7 @@ function BlogDetailsPage() {
                         <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/aricle.png"
+                              src="/assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -304,7 +304,7 @@ function BlogDetailsPage() {
                         <Link legacyBehavior href="/">
                           <a>
                             <img
-                              src="assets/img/inner-pages/aricle.png"
+                              src="/assets/img/inner-pages/aricle.png"
                               alt="image"
                             />
                           </a>
@@ -453,7 +453,7 @@ function BlogDetailsPage() {
                 <h3>2 Comment</h3>
                 <div className="single-comment">
                   <div className="author-thumb">
-                    <img src="assets/img/inner-pages/person.jpg" alt="" />
+                    <img src="/assets/img/inner-pages/person.jpg" alt="" />
                   </div>
                   <div className="comment-content">
                     <div className="author-post">
@@ -473,7 +473,7 @@ function BlogDetailsPage() {
                 </div>
                 <div className="single-comment">
                   <div className="author-thumb">
-                    <img src="assets/img/inner-pages/person.jpg" alt="" />
+                    <img src="/assets/img/inner-pages/person.jpg" alt="" />
                   </div>
                   <div className="comment-content">
                     <div className="author-post">
