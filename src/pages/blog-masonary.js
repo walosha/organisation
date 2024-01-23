@@ -53,7 +53,7 @@ function BlogMasonaryPage() {
                         {" "}
                         Services are professional offerings provided by
                         businesses to meet specific needs or solve problems for
-                        their customers. Services can range from your budject.{" "}
+                        their customers. Services can range from your budget.{" "}
                       </a>
                     </Link>
                   </h4>

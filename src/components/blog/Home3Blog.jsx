@@ -27,9 +27,13 @@ function Home3Blog() {
             <div className="section-title-3 text-center">
               <h2>The Latest Article</h2>
               <p>
-                Services are professional offerings provided by businesses to
-                meet specific needs or solve problems for their customers.
-                Services can range from your budget.
+                Welcome to Pacific Tech - Your one-stop solution for software
+                excellence, talent recruitment, seamless database migration, and
+                empowering coaching with comprehensive training. As a dynamic
+                software agency, we provide cutting-edge solutions tailored to
+                your needs. From assembling the right team to seamless
+                migrations and skill empowerment, partner with us to elevate
+                your business with innovation and expertise.
               </p>
             </div>
           </div>
