@@ -27,6 +27,7 @@ async function createPost(req, res) {
         image: image[0],
         tags: tags[0],
         titleURL: titleURL[0],
+        published: true,
         author: {
           connect: { id: "1803aab6-f836-4d8e-99e7-8735a806d2e5" },
         },
