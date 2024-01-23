@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown";
 import useHttpClient from "@/hooks/useHttpClient";
 import SyntaxHighlight from "@/components/SyntaxHighlight/SyntaxHighlight";
 import { useRouter } from "next/router";
+import { formatDate } from "@/utils";
 
 function BlogDetailsPage() {
   const {
@@ -19,6 +20,16 @@ function BlogDetailsPage() {
     tags: "",
     titleURL: "",
   });
+  const [contentList, setContentList] = useState([]);
+
+  useEffect(() => {
+    getItem();
+  }, []);
+
+  async function getItem() {
+    const data = await sendReq(`/api/post?take=3&page=1`, "GET");
+    setContentList(data.data.items);
+  }
 
   const [prevNxt, setPrevNxt] = useState({
     previousPost: null,
@@ -252,80 +263,32 @@ function BlogDetailsPage() {
                     <h4>Newest Posts</h4>
                   </div>
                   <div className="recent-post-wraper">
-                    <div className="widget-cnt">
-                      <div className="wi">
-                        <Link legacyBehavior href="/">
-                          <a>
-                            <img
-                              src="/assets/img/inner-pages/aricle.png"
-                              alt="image"
-                            />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="wc">
-                        <h6>
-                          <Link legacyBehavior href="/">
-                            <a>3 tools increasing your productivity .</a>
-                          </Link>
-                        </h6>
-                        <Link legacyBehavior href="/blog">
-                          <a>May 18, 2023</a>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="widget-cnt">
-                      <div className="wi">
-                        <Link legacyBehavior href="/">
-                          <a>
-                            <img
-                              src="/assets/img/inner-pages/aricle.png"
-                              alt="image"
-                            />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="wc">
-                        <h6>
-                          <Link legacyBehavior href="/">
-                            <a>10 Mistakes to Avoid When Using Cypress</a>
-                          </Link>
-                        </h6>
-                        <Link legacyBehavior href="/blog">
-                          <a>December 15, 2023</a>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="widget-cnt">
-                      <div className="wi">
-                        <Link legacyBehavior href="/">
-                          <a>
-                            <img
-                              src="/assets/img/inner-pages/aricle.png"
-                              alt="image"
-                            />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="wc">
-                        <h6>
-                          <Link legacyBehavior href="/">
+                    {contentList?.map(({ id, image, title, createdAt }) => (
+                      <div className="widget-cnt">
+                        <div className="wi">
+                          <Link legacyBehaviorhref={"/blog-details/" + id}>
                             <a>
-                              GraphQL benefits and why you should adopt it in
-                              2024
+                              <img src={image} alt="image" />
                             </a>
                           </Link>
-                        </h6>
-                        <Link legacyBehavior href="/blog">
-                          <a>January 14, 2023</a>
-                        </Link>
+                        </div>
+                        <div className="wc">
+                          <h6>
+                            <Link legacyBehavior href={"/blog-details/" + id}>
+                              <a>{title}.</a>
+                            </Link>
+                          </h6>
+                          <Link legacyBehavior href={"/blog-details/" + id}>
+                            <a>{formatDate(createdAt)}</a>
+                          </Link>
+                        </div>
                       </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div className="single-widgets widget_egns_tag">
                   <div className="widget-title">
-                    <h4>All Tag</h4>
+                    <h4>All Tags</h4>
                   </div>
                   <p className="wp-block-tag-cloud">
                     <Link legacyBehavior href="/blog">

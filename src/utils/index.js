@@ -15,3 +15,15 @@ export const renderRepeatedSkeletons = (element, count) => {
   }
   return skeletons;
 };
+
+export const formatDate = (dateString) => {
+  var dateObject = new Date(dateString);
+
+  // Convert to the desired format "May 18, 2023"
+  let formattedDate = dateObject.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  return formattedDate;
+};
