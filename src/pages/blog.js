@@ -16,7 +16,7 @@ function BlogPgage() {
   }, []);
 
   async function getItem() {
-    const data = await sendReq(`/api/post?take=6&page=1`, "GET");
+    const data = await sendReq(`/api/post?take=9&page=1`, "GET");
     setContentList(data.data.items);
   }
   return (
