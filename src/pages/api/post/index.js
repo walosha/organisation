@@ -58,6 +58,11 @@ async function fetchItemsWithPagination(req, res) {
           select: { name: true },
         },
       },
+      orderBy: [
+        {
+          updatedAt: "desc",
+        },
+      ],
     });
 
     console.log({ items });
