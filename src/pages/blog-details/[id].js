@@ -9,7 +9,27 @@ import SyntaxHighlight from "@/components/SyntaxHighlight/SyntaxHighlight";
 import { useRouter } from "next/router";
 import { formatDate } from "@/utils";
 
-function BlogDetailsPage() {
+export async function generateMetadata({ params, searchParams }, parent) {
+  const { isLoading, sendReq, error, clearError } = useHttpClient();
+
+  const id = params.id;
+
+  // fetch data
+  const blog = await sendReq(`/api/post/${id}`, "GET");
+  console.log({ blog });
+
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: blog.title,
+    openGraph: {
+      images: [blog.image, ...previousImages],
+    },
+  };
+}
+
+function BlogDetailsPage({ params, searchParams }) {
   const {
     query: { id },
   } = useRouter();
@@ -41,7 +61,6 @@ function BlogDetailsPage() {
   async function getItem() {
     const data = await sendReq(`/api/post/${id}`, "GET");
     setContent(data.data);
-    console.log(data.data);
   }
 
   async function getPrevNxt() {
@@ -51,7 +70,6 @@ function BlogDetailsPage() {
       nextPost: data.data.nextPost,
     });
   }
-  console.log({ contentList });
 
   return (
     <Layout>

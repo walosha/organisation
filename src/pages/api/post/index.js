@@ -39,7 +39,6 @@ async function createPost(req, res) {
 
 async function fetchItemsWithPagination(req, res) {
   const { page, take } = req.query;
-  console.log({ page, take });
   try {
     // Convert page and take to numbers
     const pageNumber = parseInt(page, 10);
@@ -65,11 +64,8 @@ async function fetchItemsWithPagination(req, res) {
       ],
     });
 
-    console.log({ items });
-
     // Fetch total count of items for pagination
     const totalItems = await prisma.post.count({ where: { published: true } });
-    console.log({ totalItems });
 
     // Calculate hasNext and hasPrevious based on the current page and total items
     const hasNext = skip + itemsPerPage < totalItems;
