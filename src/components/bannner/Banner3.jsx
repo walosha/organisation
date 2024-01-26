@@ -85,8 +85,8 @@ function Banner3() {
               <div className="banner-content">
                 <h1>Grow Your Business With Innovative Ideas.</h1>
                 <p>
-                  Empowering Your Vision, Crafting Your Future. Elevate Your
-                  Business With Innovative Ideas.
+                  We deliver sofware solutions to simply business operations and
+                  processes
                 </p>
                 <div className="banner-btn-group">
                   <Link legacyBehavior href="/contact">

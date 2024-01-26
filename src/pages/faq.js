@@ -1,8 +1,28 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import React from "react";
+import React, { useState } from "react";
 
 function Faqpage() {
+  const [status, setStatus] = useState("");
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  };
+
   return (
     <Layout>
       <Breadcrumb
@@ -65,37 +85,62 @@ function Faqpage() {
                   <h5>HAVE QUESTION?</h5>
                 </div>
                 <div className="contact-form">
-                  <form>
+                  <form
+                    name="sentMessage"
+                    id="contactForm"
+                    noValidate
+                    onSubmit={submitForm}
+                    action="https://formspree.io/mrgydgyd"
+                    method="POST"
+                  >
+                    {" "}
                     <div className="row">
                       <div className="col-md-12 mb-20">
                         <div className="form-inner">
-                          <label>name</label>
-                          <input type="text" />
+                          <label>Full Name</label>
+                          <input id="name" required name="name" type="text" />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Email</label>
-                          <input type="email" />
+                          <input
+                            id="email"
+                            required
+                            name="email"
+                            type="email"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Phone</label>
-                          <input type="email" />
+                          <input id="phone" required name="phone" type="text" />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Message</label>
-                          <textarea defaultValue={""} />
+                          <textarea
+                            id="message"
+                            required
+                            name="message"
+                            defaultValue={""}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12">
                         <div className="form-inner">
-                          <button className="primary-btn3" type="submit">
-                            Submit
-                          </button>
+                          {status === "SUCCESS" ? (
+                            <p className="text-white">
+                              Thank you! Your submission has been received!. We
+                              will respond swiftly!
+                            </p>
+                          ) : (
+                            <button className="primary-btn3" type="submit">
+                              Submit
+                            </button>
+                          )}
                         </div>
                       </div>
                     </div>
