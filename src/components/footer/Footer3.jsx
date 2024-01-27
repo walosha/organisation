@@ -198,7 +198,7 @@ function Footer3() {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/team1">
+                    <Link legacyBehavior href="/team">
                       <a>Our Team</a>
                     </Link>
                   </li>

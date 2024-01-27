@@ -10,6 +10,7 @@ function Footer3() {
     axios
       .post("/api/audience", { email })
       .then((res) => {
+        console.log({ res });
         if (res.status == 200) {
           setStatus("SUCCESS");
           setEmail("");

@@ -264,7 +264,7 @@ function Sidebar({ isMenuOpen, toggleMenu }) {
                 }`}
               >
                 <li>
-                  <Link legacyBehavior href="/team">
+                  <Link legacyBehavior href="/team1">
                     <a>Team 01</a>
                   </Link>
                 </li>

@@ -234,7 +234,7 @@ function Header3() {
                 }`}
               >
                 <li>
-                  <Link legacyBehavior href="/team1">
+                  <Link legacyBehavior href="/team">
                     <a>Team</a>
                   </Link>
                 </li>
