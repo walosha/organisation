@@ -123,7 +123,7 @@ function Testimonial3() {
                     </div>
                   </div>
                   <div className="author-img">
-                    <img src="assets/img/home-3/h3-testi-01.png" alt="" />
+                    <img src="https://avatars.collectcdn.com/a5.png" alt="" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
@@ -178,7 +178,7 @@ function Testimonial3() {
                     </div>
                   </div>
                   <div className="author-img">
-                    <img src="assets/img/home-3/h3-testi-02.png" alt="" />
+                    <img src="https://avatars.collectcdn.com/a5.png" alt="" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
@@ -220,7 +220,7 @@ function Testimonial3() {
                     </div>
                   </div>
                   <div className="author-img">
-                    <img src="assets/img/home-3/h3-testi-03.png" alt="" />
+                    <img src="https://avatars.collectcdn.com/a5.png" alt="" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
@@ -275,7 +275,7 @@ function Testimonial3() {
                     </div>
                   </div>
                   <div className="author-img">
-                    <img src="assets/img/home-3/h3-testi-02.png" alt="" />
+                    <img src="https://avatars.collectcdn.com/a5.png" alt="" />
                   </div>
                 </SwiperSlide>
               </div>
