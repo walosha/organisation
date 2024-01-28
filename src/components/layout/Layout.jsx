@@ -15,7 +15,7 @@ function Layout({ children }) {
         </title>
         <meta
           name="description"
-          content="Pacific Technology Service specializes in high-quality web, Android, and iOS app development in Lagos. Elevate your business with our expert solutions. Contact us for innovative digital experiences."
+          content="Pacific Technology Service specializes in high-quality web, Android, and iOS app development in Lagos. Elevate your business with our expert solutions. Contact us for innovative digital experiences. (08114890462)"
         />
         <link rel="icon" href="/assets/img/logo_small_light.png" />
       </Head>
