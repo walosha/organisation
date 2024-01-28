@@ -139,7 +139,7 @@ function Banner3() {
                   </div>
                   <img
                     className="video-img"
-                    src="assets/img/home-3/home3-banner-video.png"
+                    src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg"
                     alt=""
                   />
                 </div>
@@ -207,7 +207,7 @@ function Banner3() {
                   </div>
                   <img
                     className="video-img"
-                    src="assets/img/home-3/home3-banner-video.png"
+                    src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg"
                     alt=""
                   />
                 </div>
@@ -273,7 +273,7 @@ function Banner3() {
                   </div>
                   <img
                     className="video-img"
-                    src="assets/img/home-3/home3-banner-video.png"
+                    src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg"
                     alt=""
                   />
                 </div>
