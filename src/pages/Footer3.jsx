@@ -269,7 +269,7 @@ function Footer3() {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/pacificprofessional">
+                      <a href="https://www.instagram.com/pacific_technology_service">
                         <i className="bx bxl-instagram" />
                       </a>
                     </li>
