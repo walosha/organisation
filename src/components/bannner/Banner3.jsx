@@ -61,7 +61,7 @@ function Banner3() {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/pacific_nig">
+            <a href="https://www.instagram.com/pacific_technology_service">
               <i className="bx bxl-twitter" />
             </a>
           </li>
