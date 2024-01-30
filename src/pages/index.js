@@ -22,10 +22,10 @@ export default function Home() {
           property="og:title"
           content="Pacific Technology Service - Web & App Development Company"
         />
-        <meta property="og:site_name" content="Pacific Professional Service" />
+        <meta property="og:site_name" content="Pacific Technology Service" />
         <meta
           property="og:url"
-          content="https://www.pacific-professional.com.ng/"
+          content="Pacific Technology Service - Web & App Development Company Lagos"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
