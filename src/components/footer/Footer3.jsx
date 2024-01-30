@@ -219,13 +219,19 @@ function Footer3() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <a href="#">Support Area</a>
+                    <Link legacyBehavior href="/project">
+                      <a href="/team">Team</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Support Policy</a>
+                    <Link legacyBehavior href="/project">
+                      <a href="/contact">Contact</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <Link legacyBehavior href="/project">
+                      <a href="/faq">FAQ</a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#">Privacy Policy</a>

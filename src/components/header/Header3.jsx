@@ -218,43 +218,6 @@ function Header3() {
                 Project
               </a>
             </li>
-            <li className="menu-item-has-children">
-              <a href="#" className="drop-down">
-                Others
-              </a>
-              <i
-                className={`bi bi-plus dropdown-icon ${
-                  state.activeMenu === "pages" ? "active" : ""
-                }`}
-                onClick={() => toggleMenu("pages")}
-              />
-              <ul
-                className={`sub-menu ${
-                  state.activeMenu === "pages" ? "d-block" : ""
-                }`}
-              >
-                <li>
-                  <Link legacyBehavior href="/team">
-                    <a>Team</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/contact">
-                    <a>Contact</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/faq">
-                    <a>FAQs</a>
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link legacyBehavior href="/error">
-                    <a>Error 404</a>
-                  </Link>
-                </li> */}
-              </ul>
-            </li>
             <li className="menu-item">
               <a href="/case-study-standard">Case Study</a>
             </li>
