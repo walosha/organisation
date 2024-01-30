@@ -219,17 +219,17 @@ function Footer3() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="/project">
+                    <Link legacyBehavior href="/team">
                       <a href="/team">Team</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/project">
+                    <Link legacyBehavior href="/contact">
                       <a href="/contact">Contact</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/project">
+                    <Link legacyBehavior href="/faq">
                       <a href="/faq">FAQ</a>
                     </Link>
                   </li>
