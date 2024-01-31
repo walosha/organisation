@@ -238,7 +238,7 @@ function Footer3() {
                     <a href="#">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#">Career</a>
+                    <a href="career.pacific-professional.com.ng">Career</a>
                   </li>
                 </ul>
               </div>
