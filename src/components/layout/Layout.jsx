@@ -3,7 +3,8 @@ import Footer3 from "../footer/Footer3";
 import Header from "../header/Header3";
 import useBodyClass from "@/hooks/useBodyClass";
 import Head from "next/head";
-export const metadata = constructMetadat();
+import { constructMetadata } from "@/utils/metadata";
+export const metadata = constructMetadata();
 
 function Layout({ children }) {
   useBodyClass("home-dark2");
