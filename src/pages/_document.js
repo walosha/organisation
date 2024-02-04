@@ -13,7 +13,7 @@ export default function Document() {
 
         <meta
           property="og:url"
-          content="https://www.pacific-professional.com.ng/"
+          content="https://www.pacific-professional.com.ng"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -34,7 +34,7 @@ export default function Document() {
         <meta property="twitter:domain" content="pacific-professional.com.ng" />
         <meta
           property="twitter:url"
-          content="https://www.pacific-professional.com.ng/"
+          content="https://www.pacific-professional.com.ng"
         />
         <meta
           name="twitter:title"
