@@ -113,8 +113,8 @@ function Header3() {
                   <i className="fas fa-phone-alt" />
                 </div>
                 <div className="info">
-                  <a href="tel:05661111985">+880 566 1111 985</a>
-                  <a href="tel:06571111576">+880 657 1111 576</a>
+                  <a href="tel:05661111985">+(234)8185431319</a>
+                  <a href="tel:06571111576">+(234)8185431319</a>
                 </div>
               </div>
               <div className="single-info">
